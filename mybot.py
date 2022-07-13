@@ -1,6 +1,7 @@
 import getpass, os
 username = getpass.getuser()
-bot_text = (rf"""from vkbottle.bot import Bot, Message
+bot_text = (rf"""# -*- coding: utf-8 -*-
+from vkbottle.bot import Bot, Message
 from vkbottle import API, PhotoMessageUploader, LoopWrapper, DocMessagesUploader
 import asyncio, getpass, base64, requests, os, subprocess
 lw = LoopWrapper()
